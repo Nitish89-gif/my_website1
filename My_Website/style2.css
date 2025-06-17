@@ -1,0 +1,29 @@
+body{
+    background-color:#FDF6EC;
+}
+.hi{
+    height: 400 px;
+    width:400px;
+    margin-top: 50px;
+    padding-right: 20px;
+}
+.rooms{
+    margin-top: -267px;
+    margin-left: 400px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 24px;
+}
+.hello{
+    height: 400 px;
+    width:400px;
+    margin-top: 50px;
+    padding-right: 20px;
+    padding-top: 50px;
+}
+.rooms1{
+    margin: -270px;
+    font-size: 24px;
+    padding-left: 700px;
+    padding-right: 300px;
+}

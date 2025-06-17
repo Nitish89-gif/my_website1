@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="index2.html">Secound page</a>
+  <script type="text/javascript">
+    function callme()
+    {
+        window.location.href = "index2.html";
+    }
+    function validdate()
+    {
+      var curdate=new Date();
+      var arrival=new Date(document.myform.date1.value);
+      var depature=new Date(document.myform.date2.value);
+    }
+    if(arrival <= curdate)
+    {
+      alert("Enter valid date");
+      return false;
+    }
+    if(depature <=arrival)
+    {
+      alert("Depature date should be grater than arrival date");
+      return false;
+    }
+    return true;
+  </script>
+  <input  type="button" value="click me" onclick="callme()"/>
+   <div class="ju">
+    <a href="index2.html" style="text-decoration: none;">
+    <p class="home">Home</p>
+    </a>
+    <a href="Rooms.html" style="text-decoration: none;">
+    <p class="room">Rooms and Suites</p>
+    </a>
+    <p class="facilities">Facilities</p>
+    <p class="contact">Contact Us</p>
+     <a href="https://www.starhotels.com/en/">
+    <button class="button">Book Now</button>
+    </a>
+   </div>
+   <div class="form-box">
+    <h3> Check Rates Here</h3>
+    <p>Book you rooms </p>
+    <p class="arr">Arrival Date</p>
+        <form name="myform" method="get" action="index2.html" onsubmit=" return validdate()" onsubmit="callme()">
+            <input class="arrival" name="date1" type="date" placeholder="Arrival Date" required>
+            <p class="dep">Depature Date</p>
+            <input class="depature" type="Date" name="date2" placeholder="Depature Date" required>
+            <input class="adults" type="number" placeholder="Adults"required>
+            <input class="children" type="number" placeholder="Children"required>
+            <input class="rates" type="submit" value="click me"/>
+        </form>
+   </div>
+   <div class="content">
+    <h2>"Arrive as guests, leave as family.<br>
+    Experience comfort like never before."</h2>
+    <p>Welcome to a place where comfort meets affordability.<br>
+Enjoy clean, spacious rooms with all the essentials.<br>
+Friendly staff and seamless service await you.<br>
+Book now for a stay that feels like home.</p>
+    <a href="https://www.starhotels.com/en/">
+     <button class="button_1">Book Now</button>
+    </a>
+   </div>
+    <img  src="https://assets.onecompiler.app/42untjbcp/43hsqjxww/image.jpg"> 
+
+</body>
+</html>

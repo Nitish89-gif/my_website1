@@ -1,0 +1,151 @@
+body{
+  overflow-y: hidden;
+}
+img{
+    width: 100%;
+    height: 675px;
+    margin-left: 0%;
+}
+.ju {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0px;
+
+  background-image: url('https://assets.onecompiler.app/42untjbcp/43hsyp8cc/star_image-removebg-preview.png');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size:150px 150px;
+  padding-left: 40px; 
+   display: flex;
+}
+ .home {
+  margin-left:500px;
+  font-size: large;
+  color: rgb(11, 11, 6);
+  cursor: pointer; /* optional */
+  align-items: center;
+  gap: 30px;
+  cursor: pointer;
+  gap: 30px;
+
+}
+.room {
+  margin-left:50px;
+  font-size: large;
+  color: rgb(11, 11, 6);
+  cursor: pointer; /* optional */
+  align-items: center;
+  gap: 30px;
+  cursor: pointer;
+  gap: 30px;
+
+}
+.facilities{
+    margin-left:50px;
+  font-size: large;
+  color: rgb(11, 11, 6);
+  cursor: pointer; /* optional */
+  align-items: center;
+  gap: 30px;
+  cursor: pointer;
+  gap: 30px;
+}
+.contact{
+      margin-left:50px;
+  font-size: large;
+  color: rgb(11, 11, 6);
+  cursor: pointer; /* optional */
+  align-items: center;
+  gap: 30px;
+  cursor: pointer;
+  gap: 30px;
+}
+.button{
+ margin-left:50px;
+ margin-top: 8px;
+ right: 0%;
+ width: 120px;
+ height: 40px;
+ background-color: rgb(219, 168, 17);
+ color: white; 
+}
+.form-box {
+  width: 300px;
+  padding: 40px;
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  position: absolute;
+  top: 150px; 
+  left: 60%;
+}
+.arrival{
+    height: 30px;
+    width:100%;
+    padding: 10px;
+}
+.depature{
+    height: 30px;
+    width:100%;
+    padding: 10px;
+
+}
+.adults{
+    height: 30px;
+    width:100%;
+    padding: 10px;
+
+}
+.children{
+    height: 30px;
+    width:100%;
+     padding: 10px;
+}
+.rates{
+    top: 10px;
+    height: 50px;
+    row-gap: 30px;
+    width:180px;
+    background-color: rgb(219, 168, 17);
+}
+.content{
+    margin-top: 250px;
+    margin-left: 30px;
+    position:fixed;
+    color: white;
+    font-style: italic;
+}
+.button_1{
+ margin-left:8px;
+ margin-top: 8px;
+ right: 0%;
+ width: 120px;
+ height: 40px;
+ background-color: rgb(219, 168, 17);
+ color: white; 
+}
+.content p{
+    font-size: 20px;
+}
+.arr{
+    text-align: left;
+    font-size: 13px;
+}
+.dep{
+    text-align: left;
+    font-size: 13px;
+}
+#bye {
+  position: absolute;
+  top: 170px; /* slightly above .form-box (which starts at top: 150px) */
+  left: 80%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 40px;
+  background-color: rgb(219, 168, 17);
+  color: rgb(4, 3, 3);
+}
+

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Booking</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <script type="text/javascript">
+    document.write(location.pathname);
+    function checkPasswords() {
+         var z=document.myform.name1.value;
+         var email1=document.myform.email2.value;
+         var atposition=email1.indexOf("@");
+         var dotposition=email1.lastIndexOf(".");
+         var y = document.myform.pass2.value;
+         var x = document.myform.pass1.value;
+         var phone=document.myform.number.value;
+         if(z==null ||z=="")
+            {
+                alert("Write name in correct formate");
+                return false;
+            }
+         if(atposition<1||dotposition<atposition+2||dotposition+2>=email1.length)
+         {
+            alert("Write correct email formate");
+            return false;
+         }
+         if(x.length<6)
+         {
+            alert("Password must be grater than 6 letters");
+            return false;
+         }
+         if(x!=y)
+         {
+            alert("Password and confirmpassword should be same");
+            return false;
+         }
+         if(phone.length!=10)
+         {
+             alert("Please Enter Valid phone number");
+             return false;
+         }
+      return true;
+}
+  </script>
+  <input  type="button" value="click me" onclick="callme()"/>
+   <div class="ju">
+    <a href="index.html" style="text-decoration: none;">
+    <p class="home">Home</p>
+    </a>
+    <p class="room">Rooms and Suites</p>
+    <p class="facilities">Facilities</p>
+    <p class="contact">Contact Us</p>
+     <a href="https://www.starhotels.com/en/">
+    <button class="button">Book Now</button>
+    </a>
+   </div>
+   <div class="form-box">
+    <h3> Check Rates Here</h3>
+    <p>Book you rooms </p>
+    <p class="arr">Enter your details</p>
+        <form name="myform" method="get" onsubmit="return checkPasswords()" action="index3.html" >
+            <input class="arrival" type="name" placeholder="Name" name="name1" pattern="[A-Za-z]{3,}" >
+            <input class="arrival"type="text" placeholder="Email" name="email2" >
+            <input class="arrival"type="text" placeholder="Number" name="number" >
+            <input id="password1" class="depature" type="password" name="pass1" placeholder="password" pattern="^[A-Za-z]*@[A-Za-z]*$"/>
+            <input id="password2" class="adults" type="password"name="pass2" placeholder="confirmpassword" pattern="^[A-Za-z]*@[A-Za-z]*$" />
+            <input class="rates"  type="submit" value="submit"/>
+        </form>
+      <p id="results"></p>
+   </div>
+    
+   <div class="content">
+    <h2>"Arrive as guests, leave as family.<br>
+    Experience comfort like never before."</h2>
+    <p>Welcome to a place where comfort meets affordability.<br>
+Enjoy clean, spacious rooms with all the essentials.<br>
+Friendly staff and seamless service await you.<br>
+Book now for a stay that feels like home.</p>
+    <a href="https://www.starhotels.com/en/">
+     <button class="button_1">Book Now</button>
+    </a>
+   </div>
+    <img  src="https://assets.onecompiler.app/42untjbcp/43hsqjxww/image.jpg"> 
+
+</body>
+</html>
